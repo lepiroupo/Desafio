@@ -5,10 +5,7 @@ using Desafio.ExchangeRates.Proxy;
 using Desafio.ExchangeRates.Proxy.Interfaces;
 using Desafio.Repository;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace Desafio.Api.Configuration
 {
@@ -16,7 +13,6 @@ namespace Desafio.Api.Configuration
     {
         public static IServiceCollection IntegrateDependencyResolver(this IServiceCollection services)
         {
-
             return services.RegisterApp().RegisterRepository().RegisterExternalServices();
         }
 
@@ -33,6 +29,7 @@ namespace Desafio.Api.Configuration
         }
         private static IServiceCollection RegisterExternalServices(this IServiceCollection services)
         {
+            services.AddSingleton<HttpClient>();
             services.AddScoped<IExchangeRatesApiProxy, ExchangeRatesApiProxy>();
             return services;
         }

@@ -23,9 +23,9 @@ namespace Desafio.App
         {
             var cliente = _clienteRepository.ObterClientePorId(idCliente);
             var taxa = _taxaRepository.ObterTaxaCambioPorSegmento(cliente.Segmento);
-            var valorMoeda = await _exchangeRatesApiProxy.ObterValorMoeda(descricaoMoeda);
+            var moeda = await _exchangeRatesApiProxy.ObterValorMoeda(descricaoMoeda);
 
-            return CotacaoMoedaService.ObterCotacao(taxa, quantidadeMoedaEstrangeira, valorMoeda);
+            return CotacaoMoedaService.ObterCotacao(taxa, quantidadeMoedaEstrangeira, moeda.ValorEmReais);
         }
     }
 }

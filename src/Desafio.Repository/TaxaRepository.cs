@@ -8,7 +8,7 @@ namespace Desafio.Repository
     {
         public TaxaCambio ObterTaxaCambioPorSegmento(Segmento segmento)
         {
-            return new TaxaCambio(0.5M);
+            return new TaxaCambio(0.07M);
         }
     }
 }
