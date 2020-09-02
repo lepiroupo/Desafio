@@ -8,6 +8,6 @@ namespace Desafio.ExchangeRates.Proxy.Interfaces
 {
     public interface IExchangeRatesApiProxy
     {
-        Task<Moeda> ObterValorMoeda(string moeda);
+        Task<Moeda> ObterUltimaCotacaoMoeda(string moeda);
     }
 }

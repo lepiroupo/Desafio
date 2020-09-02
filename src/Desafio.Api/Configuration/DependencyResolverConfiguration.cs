@@ -1,5 +1,7 @@
 ﻿using Desafio.App;
 using Desafio.App.Interfaces;
+using Desafio.Cache;
+using Desafio.Cache.Interfaces;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.ExchangeRates.Proxy;
 using Desafio.ExchangeRates.Proxy.Interfaces;
@@ -13,7 +15,7 @@ namespace Desafio.Api.Configuration
     {
         public static IServiceCollection IntegrateDependencyResolver(this IServiceCollection services)
         {
-            return services.RegisterApp().RegisterRepository().RegisterExternalServices();
+            return services.RegisterApp().RegisterRepository().RegisterExternalServices().RegisterCache();
         }
 
         private static IServiceCollection RegisterApp(this IServiceCollection services)
@@ -31,6 +33,12 @@ namespace Desafio.Api.Configuration
         {
             services.AddSingleton<HttpClient>();
             services.AddScoped<IExchangeRatesApiProxy, ExchangeRatesApiProxy>();
+            return services;
+        }
+
+        private static IServiceCollection RegisterCache(this IServiceCollection services)
+        {
+            services.AddScoped<ICacheManager, CacheManager>();
             return services;
         }
     }

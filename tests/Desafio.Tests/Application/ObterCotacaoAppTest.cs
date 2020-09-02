@@ -21,7 +21,7 @@ namespace Desafio.Tests.Application
 
             mocker.GetMock<IClienteRepository>().Setup(r => r.ObterClientePorId(1)).Returns(new Cliente(1, "Teste", "12345678901", Segmento.Varejo));
             mocker.GetMock<ITaxaRepository>().Setup(r => r.ObterTaxaCambioPorSegmento(Segmento.Varejo)).Returns(new TaxaCambio(0.1M));
-            mocker.GetMock<IExchangeRatesApiProxy>().Setup(r => r.ObterValorMoeda("USD")).Returns(Task.FromResult(new Moeda("USD", 2)));
+            mocker.GetMock<IExchangeRatesApiProxy>().Setup(r => r.ObterUltimaCotacaoMoeda("USD")).Returns(Task.FromResult(new Moeda("USD", 2, "2020-08-31")));
 
             //act
             var valor = await app.ObterCotacaoMoedaCliente(1, "USD", 100);

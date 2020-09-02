@@ -1,4 +1,8 @@
-﻿using Desafio.ExchangeRates.Proxy;
+﻿using Desafio.Cache.Interfaces;
+using Desafio.Domain.Entities;
+using Desafio.ExchangeRates.Proxy;
+using Moq;
+using Moq.AutoMock;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
@@ -12,10 +16,12 @@ namespace Desafio.Tests.ExternalServices
         public async Task ObterValorMoeda_RealParaDolarAmericano()
         {
             //arrange
-            var proxy = new ExchangeRatesApiProxy(new HttpClient());
+            var mocker = new AutoMocker();
+            var proxy = mocker.CreateInstance<ExchangeRatesApiProxy>();
+            mocker.GetMock<ICacheManager>().Setup(c => c.ObterChache<Moeda>(It.IsAny<string>())).Returns(new Moeda("USD", 5, "2020-08-31"));
 
             //act
-            var moeda = await proxy.ObterValorMoeda("USD");
+            var moeda = await proxy.ObterUltimaCotacaoMoeda("USD");
 
             //assert
             Assert.NotEqual(0, moeda.ValorEmReais);

@@ -1,6 +1,6 @@
 ﻿using Desafio.App.Interfaces;
+using Desafio.Domain.Entities;
 using Desafio.Domain.Interfaces.Repositories;
-using Desafio.Domain.Services;
 using Desafio.ExchangeRates.Proxy.Interfaces;
 using System.Threading.Tasks;
 
@@ -23,9 +23,11 @@ namespace Desafio.App
         {
             var cliente = _clienteRepository.ObterClientePorId(idCliente);
             var taxa = _taxaRepository.ObterTaxaCambioPorSegmento(cliente.Segmento);
-            var moeda = await _exchangeRatesApiProxy.ObterValorMoeda(descricaoMoeda);
+            var moeda = await _exchangeRatesApiProxy.ObterUltimaCotacaoMoeda(descricaoMoeda);
 
-            return CotacaoMoedaService.ObterCotacao(taxa, quantidadeMoedaEstrangeira, moeda.ValorEmReais);
+            var operacao = new OperacaoCambio(cliente, taxa, moeda);
+
+            return operacao.ObterValorOperacao(quantidadeMoedaEstrangeira);
         }
     }
 }

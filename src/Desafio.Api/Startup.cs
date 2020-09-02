@@ -23,6 +23,13 @@ namespace Desafio.Api
         {
             services.AddControllers();
             services.IntegrateSwagger().IntegrateDependencyResolver();
+
+            services.AddDistributedRedisCache(options =>
+            {
+                options.Configuration =
+                    Configuration.GetConnectionString("RedisConnection");
+                options.InstanceName = "DesafioApi";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

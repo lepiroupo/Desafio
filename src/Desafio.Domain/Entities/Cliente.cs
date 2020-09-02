@@ -4,14 +4,14 @@ namespace Desafio.Domain.Entities
 {
     public class Cliente
     {
-        public long Id { get; private set; }
-        public string Nome { get; private set; }
+        public long IdCliente { get; private set; }
+        public string NomeCliente { get; private set; }
         public string CpfCnpj { get; private set; }
         public Segmento Segmento { get; private set; }
-        public Cliente(long codigoCliente, string nome, string cpfCnpj, Segmento segmento)
+        public Cliente(long idCliente, string nomeCliente, string cpfCnpj, Segmento segmento)
         {
-            Id = codigoCliente;
-            Nome = nome;
+            IdCliente = idCliente;
+            NomeCliente = nomeCliente;
             CpfCnpj = cpfCnpj;
             Segmento = segmento;
         }
