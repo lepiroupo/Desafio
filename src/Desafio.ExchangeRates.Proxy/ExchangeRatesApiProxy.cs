@@ -1,7 +1,9 @@
 ﻿using Desafio.Cache.Interfaces;
 using Desafio.Domain.Entities;
+using Desafio.ExchangeRates.Proxy.Dtos;
 using Desafio.ExchangeRates.Proxy.Interfaces;
 using Desafio.ExchangeRates.Proxy.Model;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Net.Http;
 using System.Text.Json;
@@ -14,19 +16,19 @@ namespace Desafio.ExchangeRates.Proxy
         private readonly HttpClient _httpClient;
         private readonly string _baseUrl;
         private ICacheManager _cacheManager;
-        public ExchangeRatesApiProxy(HttpClient httpClient, ICacheManager cacheManager)
+        public ExchangeRatesApiProxy(HttpClient httpClient, ICacheManager cacheManager, IConfiguration configuration)
         {
             _httpClient = httpClient;
-            _baseUrl = "https://api.exchangeratesapi.io";
+            _baseUrl = configuration["ExchangeRatesApi:EndPoint"];
             _cacheManager = cacheManager;
         }
 
         public async Task<Moeda> ObterUltimaCotacaoMoeda(string siglaMoeda)
         {
             var chaveMoeda = ObterChaveMoedaAtual(siglaMoeda);
-            var cache = _cacheManager.ObterChache<Moeda>(chaveMoeda);
+            var cache = _cacheManager.ObterChache<MoedaDto>(chaveMoeda);
             if (cache != null)
-                return cache;
+                return new Moeda(cache.Nome, cache.ValorEmReais, cache.DataCotacao);
 
             var response = await _httpClient.GetAsync($"{_baseUrl}/latest?base={siglaMoeda}&symbols=BRL");
 
