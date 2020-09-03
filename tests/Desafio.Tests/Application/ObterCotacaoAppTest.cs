@@ -1,6 +1,5 @@
 ﻿using Desafio.App;
 using Desafio.Domain.Entities;
-using Desafio.Domain.Enums;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.ExchangeRates.Proxy.Interfaces;
 using Moq.AutoMock;
@@ -19,15 +18,15 @@ namespace Desafio.Tests.Application
             var mocker = new AutoMocker();
             var app = mocker.CreateInstance<CotacaoApp>();
 
-            mocker.GetMock<IClienteRepository>().Setup(r => r.ObterClientePorId(1)).Returns(new Cliente(1, "Teste", "12345678901", Segmento.Varejo));
-            mocker.GetMock<ITaxaRepository>().Setup(r => r.ObterTaxaCambioPorSegmento(Segmento.Varejo)).Returns(new TaxaCambio(0.1M));
-            mocker.GetMock<IExchangeRatesApiProxy>().Setup(r => r.ObterUltimaCotacaoMoeda("USD")).Returns(Task.FromResult(new Moeda("USD", 2, "2020-08-31")));
+            mocker.GetMock<IClienteRepository>().Setup(r => r.ObterClientePorId(1)).Returns(new Cliente(1, "Teste", "12345678901", Domain.Enums.Segmento.Varejo));
+            mocker.GetMock<ITaxaRepository>().Setup(r => r.ObterTaxaCambioPorSegmento(Domain.Enums.Segmento.Varejo)).Returns(new TaxaCambio(Domain.Enums.Segmento.Varejo, 0.1M));
+            mocker.GetMock<IExchangeRatesApiProxy>().Setup(r => r.ObterUltimaCotacaoMoeda("USD")).Returns(Task.FromResult(2M));
 
             //act
-            var valor = await app.ObterCotacaoMoedaCliente(1, "USD", 100);
+            var response = await app.ObterCotacaoMoeda(1, "USD", 100);
 
             //assert
-            Assert.Equal(220, valor);
+            Assert.Equal(220, response.ValorTotal);
         }
     }
 }

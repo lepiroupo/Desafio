@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Desafio.Api.Model\Desafio.Api.Model.csproj" />
     <ProjectReference Include="..\Desafio.Domain\Desafio.Domain.csproj" />
     <ProjectReference Include="..\Desafio.ExchangeRates.Proxy\Desafio.ExchangeRates.Proxy.csproj" />
   </ItemGroup>

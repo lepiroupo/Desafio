@@ -25,8 +25,9 @@ GO
 CREATE TABLE dbo.TaxaCambio(
 	IdTaxaCambio BIGINT NOT NULL IDENTITY,
 	IdSegmento SMALLINT NOT NULL,
-	ValorTaxa DECIMAL(10,4) NOT NULL
+	ValorTaxa DECIMAL(10,4) NOT NULL,
 	CONSTRAINT PK_TaxaCambio PRIMARY KEY (IdTaxaCambio),
-	CONSTRAINT FK_TaxaCambio_Segmento FOREIGN KEY (IdSegmento) REFERENCES dbo.Segmento (IdSegmento)
+	CONSTRAINT FK_TaxaCambio_Segmento FOREIGN KEY (IdSegmento) REFERENCES dbo.Segmento (IdSegmento),
+	CONSTRAINT UK_TaxaCambio_IdSegmento UNIQUE (IdSegmento)
 )
 GO

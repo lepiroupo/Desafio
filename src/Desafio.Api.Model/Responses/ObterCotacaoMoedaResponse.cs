@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Desafio.Api.Model.Responses
+﻿namespace Desafio.Api.Model.Responses
 {
     public class ObterCotacaoMoedaResponse
     {
-        public string Moeda { get; private set; }
+        public string Moeda { get; set; }
         public decimal ValorMoeda { get; set; }
-        public string Quantidade { get; set; }
-        public decimal ValorTaxa { get; set; }
+        public decimal Quantidade { get; set; }
         public decimal ValorTotal { get; set; }
     }
 }

@@ -23,12 +23,12 @@ namespace Desafio.ExchangeRates.Proxy
             _cacheManager = cacheManager;
         }
 
-        public async Task<Moeda> ObterUltimaCotacaoMoeda(string siglaMoeda)
+        public async Task<decimal> ObterUltimaCotacaoMoeda(string siglaMoeda)
         {
             var chaveMoeda = ObterChaveMoedaAtual(siglaMoeda);
             var cache = _cacheManager.ObterChache<MoedaDto>(chaveMoeda);
             if (cache != null)
-                return new Moeda(cache.Nome, cache.ValorEmReais, cache.DataCotacao);
+                return cache.ValorEmReais;
 
             var response = await _httpClient.GetAsync($"{_baseUrl}/latest?base={siglaMoeda}&symbols=BRL");
 
@@ -36,11 +36,11 @@ namespace Desafio.ExchangeRates.Proxy
 
             var responseBody = JsonSerializer.Deserialize<LatestResult>(await response.Content.ReadAsStringAsync());
 
-            var moeda = new Moeda(siglaMoeda, responseBody.Rates.BRL, responseBody.Date);
+            var moedaDto = new MoedaDto(siglaMoeda, responseBody.Rates.BRL, responseBody.Date);
 
-            _cacheManager.GravarCache(chaveMoeda, moeda);
+            _cacheManager.GravarCache(chaveMoeda, moedaDto);
 
-            return moeda;
+            return moedaDto.ValorEmReais;
         }
 
         private string ObterChaveMoedaAtual(string siglaMoeda)

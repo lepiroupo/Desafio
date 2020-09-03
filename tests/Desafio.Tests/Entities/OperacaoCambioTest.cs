@@ -1,5 +1,7 @@
-﻿using Desafio.Domain.Entities;
+﻿using Desafio.Api.Model.Enums;
+using Desafio.Domain.Entities;
 using Desafio.Domain.Enums;
+using System;
 using Xunit;
 
 namespace Desafio.Tests.Entities
@@ -11,13 +13,14 @@ namespace Desafio.Tests.Entities
         public void OperacaoCambio_ObterValorCotacao()
         {
             //arrange
-            var operacaoCambio = new OperacaoCambio(new Cliente(1, "Teste", "012345678901", Segmento.Varejo), new TaxaCambio(0.1M), new Moeda("USD", 2M, "2020-08-31"));
+            var operacaoCambio = new OperacaoCambio(new Cliente(1, "Teste", "012345678901", Domain.Enums.Segmento.Varejo), new TaxaCambio(Domain.Enums.Segmento.Varejo, 0.1M));
 
             //act
-            var valorOperacao = operacaoCambio.ObterValorOperacao(100);
+            operacaoCambio.DefinirMoedaOperacao("USD", 2m);
+            operacaoCambio.CalcularValorOperacao(100);
 
             //assert
-            Assert.Equal(220, valorOperacao);
+            Assert.Equal(220, operacaoCambio.ValorOperacao);
         }
     }
 }

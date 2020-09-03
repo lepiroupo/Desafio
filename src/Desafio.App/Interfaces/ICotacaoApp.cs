@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Desafio.Api.Model.Responses;
 using System.Threading.Tasks;
 
 namespace Desafio.App.Interfaces
 {
     public interface ICotacaoApp
     {
-        Task<decimal> ObterCotacaoMoedaCliente(long idCliente, string descricaoMoeda, decimal quantidadeMoedaEstrangeira);
+        Task<ObterCotacaoMoedaResponse> ObterCotacaoMoeda(long idCliente, string descricaoMoeda, decimal quantidadeMoedaEstrangeira);
     }
 }

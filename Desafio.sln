@@ -33,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cache", "Cache", "{E5C260CF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.Cache", "src\Desafio.Cache\Desafio.Cache.csproj", "{542ED2E4-FE2F-41C2-84E2-C2688E7F13DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Api.Model", "src\Desafio.Api.Model\Desafio.Api.Model.csproj", "{17305B99-AE78-4512-A88D-532A258730BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.Api.Model", "src\Desafio.Api.Model\Desafio.Api.Model.csproj", "{17305B99-AE78-4512-A88D-532A258730BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

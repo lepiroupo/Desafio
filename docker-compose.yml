@@ -14,7 +14,7 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_PID=Express
     volumes:
-      - C:/Desafio/Docker/Sql/Data:/var/opt/mssql/data
+      - ./.Docker/Sql/Data:/var/opt/mssql/data
     ports:
       - "1433:1433"
   redis:

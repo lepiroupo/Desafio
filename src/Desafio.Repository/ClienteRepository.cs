@@ -1,12 +1,8 @@
-﻿using Dapper;
-using Desafio.Domain.Entities;
+﻿using Desafio.Domain.Entities;
 using Desafio.Domain.Enums;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.Repository.Base;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Data.SqlClient;
-using System.Linq;
 
 namespace Desafio.Repository
 {

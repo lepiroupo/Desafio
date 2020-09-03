@@ -2,8 +2,6 @@ use Desafio
 go
 
 BEGIN TRAN
---ROLLBACK
---COMMIT
 
 INSERT INTO Segmento VALUES
 (1, 'Varejo', 1),
@@ -22,3 +20,5 @@ INSERT INTO TaxaCambio VALUES
 (2, 0.08),
 (3, 0.05)
 GO
+
+COMMIT

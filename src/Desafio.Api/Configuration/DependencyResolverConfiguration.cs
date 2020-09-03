@@ -21,6 +21,7 @@ namespace Desafio.Api.Configuration
         private static IServiceCollection RegisterApp(this IServiceCollection services)
         {
             services.AddScoped<ICotacaoApp, CotacaoApp>();
+            services.AddScoped<ITaxaApp, TaxaApp>();
             return services;
         }
         private static IServiceCollection RegisterRepository(this IServiceCollection services)
