@@ -1,9 +1,13 @@
-﻿using Desafio.Api.Model.Responses;
+﻿using Desafio.Api.Model.Requests;
+using Desafio.Api.Model.Responses;
 using Desafio.App.Extensions;
 using Desafio.App.Interfaces;
+using Desafio.App.Validation;
 using Desafio.Domain.Entities;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.ExchangeRates.Proxy.Interfaces;
+using Desafio.Message.Notifications;
+using System;
 using System.Threading.Tasks;
 
 namespace Desafio.App
@@ -13,27 +17,40 @@ namespace Desafio.App
         private readonly IClienteRepository _clienteRepository;
         private readonly ITaxaRepository _taxaRepository;
         private readonly IExchangeRatesApiProxy _exchangeRatesApiProxy;
+        private readonly NotificacaoErro _notificacoes;
 
-        public CotacaoApp(IClienteRepository clienteRepository, ITaxaRepository taxaRepository, IExchangeRatesApiProxy exchangeRatesApiProxy)
+        public CotacaoApp(IClienteRepository clienteRepository, ITaxaRepository taxaRepository, IExchangeRatesApiProxy exchangeRatesApiProxy, NotificacaoErro notificacoes)
         {
             _clienteRepository = clienteRepository;
             _taxaRepository = taxaRepository;
             _exchangeRatesApiProxy = exchangeRatesApiProxy;
+            _notificacoes = notificacoes;
         }
 
-        public async Task<ObterCotacaoMoedaResponse> ObterCotacaoMoeda(long idCliente, string descricaoMoeda, decimal quantidadeMoedaEstrangeira)
+        public async Task<ObterCotacaoMoedaResponse> ObterCotacaoMoeda(ObterCotacaoMoedaRequest request)
         {
-            var cliente = _clienteRepository.ObterClientePorId(idCliente);
-            var taxa = _taxaRepository.ObterTaxaCambioPorSegmento(cliente.Segmento);
-            var valorMoeda = await _exchangeRatesApiProxy.ObterUltimaCotacaoMoeda(descricaoMoeda);
+            if (!new ObterCotacaoMoedaValidation(_clienteRepository, _notificacoes).Validar(request))
+                return null;
 
-            var operacao = new OperacaoCambio(cliente, taxa);
+            try
+            {
+                var cliente = _clienteRepository.ObterClientePorId(request.IdCliente);
+                var taxa = _taxaRepository.ObterTaxaCambioPorSegmento(cliente.Segmento);
+                var valorMoeda = await _exchangeRatesApiProxy.ObterUltimaCotacaoMoeda(request.Moeda);
 
-            operacao.DefinirMoedaOperacao(descricaoMoeda, valorMoeda);
+                var operacao = new OperacaoCambio(cliente, taxa);
 
-            operacao.CalcularValorOperacao(quantidadeMoedaEstrangeira);
+                operacao.DefinirMoedaOperacao(request.Moeda, valorMoeda);
 
-            return operacao.ToResponse(quantidadeMoedaEstrangeira);
+                operacao.CalcularValorOperacao(request.QuantidadeMoeda);
+
+                return operacao.ToResponse(request.QuantidadeMoeda);
+            }
+            catch (Exception ex)
+            {
+                _notificacoes.AdicionarMensangem(ex.Message);
+                return null;
+            }
         }
     }
 }

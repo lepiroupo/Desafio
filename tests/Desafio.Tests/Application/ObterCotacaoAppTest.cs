@@ -1,4 +1,5 @@
-﻿using Desafio.App;
+﻿using Desafio.Api.Model.Enums;
+using Desafio.App;
 using Desafio.Domain.Entities;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.ExchangeRates.Proxy.Interfaces;
@@ -23,7 +24,12 @@ namespace Desafio.Tests.Application
             mocker.GetMock<IExchangeRatesApiProxy>().Setup(r => r.ObterUltimaCotacaoMoeda("USD")).Returns(Task.FromResult(2M));
 
             //act
-            var response = await app.ObterCotacaoMoeda(1, "USD", 100);
+            var response = await app.ObterCotacaoMoeda(new Api.Model.Requests.ObterCotacaoMoedaRequest
+            {
+                IdCliente = 1,
+                Moeda = Moeda.USD.ToString(),
+                QuantidadeMoeda = 100
+            });
 
             //assert
             Assert.Equal(220, response.ValorTotal);

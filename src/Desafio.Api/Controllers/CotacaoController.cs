@@ -1,7 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Desafio.Api.Model.Enums;
+using Desafio.Api.Model.Requests;
 using Desafio.Api.Model.Responses;
 using Desafio.App.Interfaces;
+using Desafio.Message.Notifications;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +16,7 @@ namespace Desafio.Api.Controllers
     {
         private readonly ICotacaoApp _app;
 
-        public CotacaoController(ICotacaoApp app)
+        public CotacaoController(ICotacaoApp app, NotificacaoErro notificacaoErro):base(notificacaoErro)
         {
             _app = app;
         }
@@ -34,7 +36,13 @@ namespace Desafio.Api.Controllers
         [Produces("application/json")]
         public async Task<IActionResult> ObterCotacaoMoeda(long idCliente, Moeda moeda, decimal quantidadeMoeda)
         {
-            return await ProcessarRequest(() => _app.ObterCotacaoMoeda(idCliente, moeda.ToString(), quantidadeMoeda));
+            var request = new ObterCotacaoMoedaRequest
+            {
+                IdCliente = idCliente,
+                Moeda = moeda.ToString(),
+                QuantidadeMoeda = quantidadeMoeda
+            };
+            return await ProcessarRequest(() => _app.ObterCotacaoMoeda(request));
 
         }
     }

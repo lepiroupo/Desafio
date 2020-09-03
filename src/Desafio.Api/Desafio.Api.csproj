@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Desafio.Api.Model\Desafio.Api.Model.csproj" />
     <ProjectReference Include="..\Desafio.App\Desafio.App.csproj" />
+    <ProjectReference Include="..\Desafio.Message\Desafio.Message.csproj" />
     <ProjectReference Include="..\Desafio.Repository\Desafio.Repository.csproj" />
   </ItemGroup>
 

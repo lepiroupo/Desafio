@@ -5,6 +5,7 @@ using Desafio.Cache.Interfaces;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.ExchangeRates.Proxy;
 using Desafio.ExchangeRates.Proxy.Interfaces;
+using Desafio.Message.Notifications;
 using Desafio.Repository;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
@@ -15,7 +16,7 @@ namespace Desafio.Api.Configuration
     {
         public static IServiceCollection IntegrateDependencyResolver(this IServiceCollection services)
         {
-            return services.RegisterApp().RegisterRepository().RegisterExternalServices().RegisterCache();
+            return services.RegisterApp().RegisterRepository().RegisterExternalServices().RegisterCache().RegisterMessage();
         }
 
         private static IServiceCollection RegisterApp(this IServiceCollection services)
@@ -40,6 +41,11 @@ namespace Desafio.Api.Configuration
         private static IServiceCollection RegisterCache(this IServiceCollection services)
         {
             services.AddScoped<ICacheManager, CacheManager>();
+            return services;
+        }
+        private static IServiceCollection RegisterMessage(this IServiceCollection services)
+        {
+            services.AddScoped<NotificacaoErro>();
             return services;
         }
     }
