@@ -1,19 +1,23 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Desafio.Api.Model.Requests;
 using Desafio.Api.Model.Responses;
 using Desafio.App.Interfaces;
+using Desafio.Message.Notifications;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace Desafio.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TaxaController : ControllerBase
+    public class TaxaController : BaseController
     {
         private ITaxaApp _taxaApp;
 
-        public TaxaController(ITaxaApp taxaApp)
+        public TaxaController(ITaxaApp taxaApp, NotificacaoErro notificacoes) : base(notificacoes)
         {
             _taxaApp = taxaApp;
         }
@@ -23,11 +27,12 @@ namespace Desafio.Api.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("ObterTaxasCambio")]
-        [ProducesResponseType(typeof(ListarTaxasCambioResponse), StatusCodes.Status200OK)]
+        [SwaggerOperation("Lista todas as taxas de câmbio")]
+        [SwaggerResponse(StatusCodes.Status200OK, "Taxas listadas com suceso", typeof(IEnumerable<ListarTaxasCambioResponse>))]
         [Produces("application/json")]
-        public Task<JsonResult> ListarTaxasCambio()
+        public async Task<IActionResult> ListarTaxasCambio()
         {
-            return Task.FromResult(new JsonResult(_taxaApp.ListarTaxasCambio()));
+            return await ProcessarRequest(() => _taxaApp.ListarTaxasCambio());
         }
 
         /// <summary>
@@ -37,9 +42,11 @@ namespace Desafio.Api.Controllers
         /// <returns></returns>
         [HttpPut]
         [Route("AtualizarTaxaCambio")]
-        public Task AtualizarTaxaCambio(AtualizarTaxaCambioRequest request)
+        [SwaggerOperation("Atualiza o valor da taxa de câmbio do segmento")]
+        [SwaggerResponse(StatusCodes.Status200OK, "Taxa Atualizada")]
+        public async Task<IActionResult> AtualizarTaxaCambio(AtualizarTaxaCambioRequest request)
         {
-            return Task.Run(() =>_taxaApp.AtualizarTaxaCambio(request));
+            return await ProcessarRequest(() => _taxaApp.AtualizarTaxaCambio(request));
         }
     }
 }

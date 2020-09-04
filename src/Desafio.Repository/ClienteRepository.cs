@@ -15,9 +15,7 @@ namespace Desafio.Repository
 
         public Cliente ObterClientePorId(long id)
         {
-            var sql = $"SELECT IdCliente, NomeCliente, CpfCnpj, IdSegmento " +
-                 $"FROM dbo.Cliente " +
-                 $"WHERE IdCliente = @idCliente";
+            var sql = $"SELECT IdCliente, NomeCliente, CpfCnpj, IdSegmento FROM dbo.Cliente WHERE IdCliente = @idCliente";
 
             var parametros = new { idCliente = id };
 

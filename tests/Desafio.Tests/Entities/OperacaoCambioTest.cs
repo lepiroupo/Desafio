@@ -1,7 +1,4 @@
-﻿using Desafio.Api.Model.Enums;
-using Desafio.Domain.Entities;
-using Desafio.Domain.Enums;
-using System;
+﻿using Desafio.Domain.Entities;
 using Xunit;
 
 namespace Desafio.Tests.Entities

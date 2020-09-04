@@ -16,17 +16,14 @@ namespace Desafio.Repository
 
         public IEnumerable<TaxaCambio> ListarTaxasCambio()
         {
-            var sql = $"SELECT IdTaxaCambio, IdSegmento, ValorTaxa " +
-                      $"FROM dbo.TaxaCambio";
+            var sql = $"SELECT IdTaxaCambio, IdSegmento, ValorTaxa FROM dbo.TaxaCambio";
 
             return ObterLista(sql, GerarTaxa());
         }
 
         public TaxaCambio ObterTaxaCambioPorSegmento(Segmento segmento)
         {
-            var sql = $"SELECT IdTaxaCambio, IdSegmento, ValorTaxa " +
-                      $"FROM dbo.TaxaCambio " +
-                      $"WHERE IdSegmento = @segmento";
+            var sql = $"SELECT IdTaxaCambio, IdSegmento, ValorTaxa FROM dbo.TaxaCambio WHERE IdSegmento = @segmento";
 
             var parametros = new { @segmento = (int)segmento };
 

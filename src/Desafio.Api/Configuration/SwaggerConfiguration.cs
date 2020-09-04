@@ -24,10 +24,7 @@ namespace Desafio.Api.Configuration
                             Url = new Uri("https://github.com/lepiroupo")
                         }
                     });
-
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
+                c.EnableAnnotations();
             });
             return services;
         }

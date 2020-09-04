@@ -31,11 +31,16 @@ namespace Desafio.App.Validation
         private void DefinirValidacao()
         {
             CascadeMode = CascadeMode.Continue;
-            RuleFor(x => x.Moeda)
+
+            RuleFor(x => x.Moeda).Cascade(CascadeMode.Stop)
+                .NotNull().WithMessage("Moeda não pode ser nula")
+                .NotEmpty().WithMessage("Moeda não pode ser vazia")
                 .Must(m => m.Length.Equals(3)).WithMessage("Moeda informada é inválida");
+
             RuleFor(x => x.IdCliente).Cascade(CascadeMode.Stop)
                 .NotEqual(0).WithMessage("IdCliente deve ser maior que 0")
                 .Must(ClienteExiste).WithMessage($"Cliente não encontrado");
+
             RuleFor(x => x.QuantidadeMoeda).GreaterThan(0).WithMessage("Quantidade de moeda deve ser maior que 0");
         }
 

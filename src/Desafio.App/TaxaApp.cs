@@ -5,6 +5,7 @@ using Desafio.App.Interfaces;
 using Desafio.Domain.Entities;
 using Desafio.Domain.Interfaces.Repositories;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Desafio.App
 {
@@ -17,14 +18,14 @@ namespace Desafio.App
             _taxaRepository = taxaRepository;
         }
 
-        public void AtualizarTaxaCambio(AtualizarTaxaCambioRequest request)
+        public Task AtualizarTaxaCambio(AtualizarTaxaCambioRequest request)
         {
-            _taxaRepository.AtualizarTaxaCambio(new TaxaCambio((Domain.Enums.Segmento)request.Segmento, request.ValorTaxa));
+            return Task.Run(() => _taxaRepository.AtualizarTaxaCambio(new TaxaCambio((Domain.Enums.Segmento)request.Segmento, request.ValorTaxa)));
         }
-        public IEnumerable<ListarTaxasCambioResponse> ListarTaxasCambio()
+        public Task<IEnumerable<ListarTaxasCambioResponse>> ListarTaxasCambio()
         {
             var taxas = _taxaRepository.ListarTaxasCambio();
-            return taxas.ToResponse();
+            return Task.FromResult(taxas.ToResponse());
         }
     }
 }

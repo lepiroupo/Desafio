@@ -8,6 +8,7 @@ using Desafio.ExchangeRates.Proxy.Interfaces;
 using Desafio.Message.Notifications;
 using Desafio.Repository;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Net.Http;
 
 namespace Desafio.Api.Configuration
@@ -33,7 +34,6 @@ namespace Desafio.Api.Configuration
         }
         private static IServiceCollection RegisterExternalServices(this IServiceCollection services)
         {
-            services.AddSingleton<HttpClient>();
             services.AddScoped<IExchangeRatesApiProxy, ExchangeRatesApiProxy>();
             return services;
         }

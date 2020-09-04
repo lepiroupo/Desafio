@@ -7,7 +7,6 @@ using Desafio.Domain.Entities;
 using Desafio.Domain.Interfaces.Repositories;
 using Desafio.ExchangeRates.Proxy.Interfaces;
 using Desafio.Message.Notifications;
-using System;
 using System.Threading.Tasks;
 
 namespace Desafio.App
@@ -32,8 +31,6 @@ namespace Desafio.App
             if (!new ObterCotacaoMoedaValidation(_clienteRepository, _notificacoes).Validar(request))
                 return null;
 
-            try
-            {
                 var cliente = _clienteRepository.ObterClientePorId(request.IdCliente);
                 var taxa = _taxaRepository.ObterTaxaCambioPorSegmento(cliente.Segmento);
                 var valorMoeda = await _exchangeRatesApiProxy.ObterUltimaCotacaoMoeda(request.Moeda);
@@ -45,12 +42,6 @@ namespace Desafio.App
                 operacao.CalcularValorOperacao(request.QuantidadeMoeda);
 
                 return operacao.ToResponse(request.QuantidadeMoeda);
-            }
-            catch (Exception ex)
-            {
-                _notificacoes.AdicionarMensangem(ex.Message);
-                return null;
-            }
         }
     }
 }

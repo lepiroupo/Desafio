@@ -1,5 +1,4 @@
 ﻿using Desafio.Cache.Interfaces;
-using Desafio.Domain.Entities;
 using Desafio.ExchangeRates.Proxy.Dtos;
 using Desafio.ExchangeRates.Proxy.Interfaces;
 using Desafio.ExchangeRates.Proxy.Model;
@@ -13,13 +12,11 @@ namespace Desafio.ExchangeRates.Proxy
 {
     public class ExchangeRatesApiProxy : IExchangeRatesApiProxy
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _baseUrl;
+        private readonly IHttpClientFactory _clientFactory;
         private ICacheManager _cacheManager;
-        public ExchangeRatesApiProxy(HttpClient httpClient, ICacheManager cacheManager, IConfiguration configuration)
+        public ExchangeRatesApiProxy(IHttpClientFactory clientFactory, ICacheManager cacheManager)
         {
-            _httpClient = httpClient;
-            _baseUrl = configuration["ExchangeRatesApi:EndPoint"];
+            _clientFactory = clientFactory;
             _cacheManager = cacheManager;
         }
 
@@ -30,9 +27,11 @@ namespace Desafio.ExchangeRates.Proxy
             if (cache != null)
                 return cache.ValorEmReais;
 
-            var response = await _httpClient.GetAsync($"{_baseUrl}/latest?base={siglaMoeda}&symbols=BRL");
+            var client = _clientFactory.CreateClient("exchangeRates");
+            var response = await client.GetAsync($"latest?base={siglaMoeda}&symbols=BRL");
 
-            response.EnsureSuccessStatusCode();
+            if (response.StatusCode != System.Net.HttpStatusCode.OK)
+                return 0M;
 
             var responseBody = JsonSerializer.Deserialize<LatestResult>(await response.Content.ReadAsStringAsync());
 
