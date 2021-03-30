@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Desafio.Api.Model.Requests;
 using Desafio.Api.Model.Responses;
@@ -15,7 +14,7 @@ namespace Desafio.Api.Controllers
     [ApiController]
     public class TaxaController : BaseController
     {
-        private ITaxaApp _taxaApp;
+        private readonly ITaxaApp _taxaApp;
 
         public TaxaController(ITaxaApp taxaApp, NotificacaoErro notificacoes) : base(notificacoes)
         {

@@ -28,9 +28,8 @@ namespace Desafio.App
 
         public async Task<ObterCotacaoMoedaResponse> ObterCotacaoMoeda(ObterCotacaoMoedaRequest request)
         {
-            if (!new ObterCotacaoMoedaValidation(_clienteRepository, _notificacoes).Validar(request))
-                return null;
-
+            if (new ObterCotacaoMoedaValidation(_clienteRepository, _notificacoes).Validar(request))
+            {
                 var cliente = _clienteRepository.ObterClientePorId(request.IdCliente);
                 var taxa = _taxaRepository.ObterTaxaCambioPorSegmento(cliente.Segmento);
                 var valorMoeda = await _exchangeRatesApiProxy.ObterUltimaCotacaoMoeda(request.Moeda);
@@ -42,6 +41,8 @@ namespace Desafio.App
                 operacao.CalcularValorOperacao(request.QuantidadeMoeda);
 
                 return operacao.ToResponse(request.QuantidadeMoeda);
+            }
+            return null;
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Desafio.Message.Notifications
 {
     public class NotificacaoErro
     {
-        private List<string> _mensagens;
+        private readonly List<string> _mensagens;
         public IReadOnlyCollection<string> Mensagens => _mensagens;
         public bool PossuiMensangens => _mensagens.Any();
         public NotificacaoErro()

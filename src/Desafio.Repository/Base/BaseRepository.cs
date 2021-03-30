@@ -9,12 +9,10 @@ namespace Desafio.Repository.Base
 {
     public abstract class BaseRepository
     {
-        private readonly IConfiguration _configuration;
         private readonly SqlConnection _connection;
         protected BaseRepository(IConfiguration configuration)
         {
-            _configuration = configuration;
-            _connection = new SqlConnection(_configuration.GetConnectionString("SqlConnection"));
+            _connection = new SqlConnection(configuration.GetConnectionString("SqlConnection"));
         }        
         protected int ExecutarConsultaSemRetorno(string sql, object parametros)
         {

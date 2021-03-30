@@ -2,7 +2,6 @@
 using Desafio.ExchangeRates.Proxy.Dtos;
 using Desafio.ExchangeRates.Proxy.Interfaces;
 using Desafio.ExchangeRates.Proxy.Model;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Net.Http;
 using System.Text.Json;
@@ -13,7 +12,7 @@ namespace Desafio.ExchangeRates.Proxy
     public class ExchangeRatesApiProxy : IExchangeRatesApiProxy
     {
         private readonly IHttpClientFactory _clientFactory;
-        private ICacheManager _cacheManager;
+        private readonly ICacheManager _cacheManager;
         public ExchangeRatesApiProxy(IHttpClientFactory clientFactory, ICacheManager cacheManager)
         {
             _clientFactory = clientFactory;
