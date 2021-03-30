@@ -1,5 +1,6 @@
 # Desafio
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lepiroupo_Desafio&metric=alert_status)](https://sonarcloud.io/dashboard?id=lepiroupo_Desafio)
+
 Para a execução da solution é necessário:
 
   - Visual Studio 2019
