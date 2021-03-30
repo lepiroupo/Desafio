@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="228" visitedSequencePoints="119" numBranchPoints="32" visitedBranchPoints="3" sequenceCoverage="52.19" branchCoverage="9.37" maxCyclomaticComplexity="33" minCyclomaticComplexity="4" visitedClasses="13" numClasses="23" visitedMethods="32" numMethods="70" />
+  <Modules>
+    <Module hash="D8006772-59CB-4EF4-81DB-EF1E723CC75A">
+      <ModulePath>Desafio.Api.Model.dll</ModulePath>
+      <ModuleTime>2021-03-30T01:02:03</ModuleTime>
+      <ModuleName>Desafio.Api.Model</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Api.Model\Responses\ListarTaxasCambioResponse.cs" />
+        <File uid="2" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Api.Model\Responses\ObterCotacaoMoedaResponse.cs" />
+        <File uid="3" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Api.Model\Requests\AtualizarTaxaCambioRequest.cs" />
+        <File uid="4" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Api.Model\Requests\ObterCotacaoMoedaRequest.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>Desafio.Api.Model.Responses.ListarTaxasCambioResponse</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Api.Model.Enums.Segmento Desafio.Api.Model.Responses.ListarTaxasCambioResponse::get_Segmento()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Api.Model.Responses.ListarTaxasCambioResponse::get_ValorTaxa()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="25" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="4" />
+          <FullName>Desafio.Api.Model.Responses.ObterCotacaoMoedaResponse</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.Api.Model.Responses.ObterCotacaoMoedaResponse::get_Moeda()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="5" ordinal="0" sl="5" sc="1" el="5" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="5" ec="1" el="5" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Api.Model.Responses.ObterCotacaoMoedaResponse::get_ValorMoeda()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="6" ordinal="0" sl="6" sc="1" el="6" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="6" ec="1" el="6" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Api.Model.Responses.ObterCotacaoMoedaResponse::get_Quantidade()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Api.Model.Responses.ObterCotacaoMoedaResponse::get_ValorTotal()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>Desafio.Api.Model.Requests.AtualizarTaxaCambioRequest</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Api.Model.Requests.AtualizarTaxaCambioRequest::get_ValorTaxa()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Api.Model.Enums.Segmento Desafio.Api.Model.Requests.AtualizarTaxaCambioRequest::get_Segmento()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>Desafio.Api.Model.Requests.ObterCotacaoMoedaRequest</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Api.Model.Requests.ObterCotacaoMoedaRequest::get_QuantidadeMoeda()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="18" uspid="5" ordinal="0" sl="5" sc="1" el="5" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="5" ec="1" el="5" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int64 Desafio.Api.Model.Requests.ObterCotacaoMoedaRequest::get_IdCliente()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="17" uspid="6" ordinal="0" sl="6" sc="1" el="6" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="6" ec="1" el="6" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.Api.Model.Requests.ObterCotacaoMoedaRequest::get_Moeda()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="18" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="1145349B-43EB-433E-B168-DC2D7C824857">
+      <ModulePath>Desafio.App.dll</ModulePath>
+      <ModuleTime>2021-03-30T01:02:03</ModuleTime>
+      <ModuleName>Desafio.App</ModuleName>
+      <Files>
+        <File uid="5" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.App\CotacaoApp.cs" />
+        <File uid="6" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.App\TaxaApp.cs" />
+        <File uid="7" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.App\Validation\ObterCotacaoMoedaValidation.cs" />
+        <File uid="8" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.App\Extensions\OperacaoExtension.cs" />
+        <File uid="9" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.App\Extensions\TaxaCambioExtensions.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Desafio.App.CotacaoApp</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.App.CotacaoApp::.ctor(Desafio.Domain.Interfaces.Repositories.IClienteRepository,Desafio.Domain.Interfaces.Repositories.ITaxaRepository,Desafio.ExchangeRates.Proxy.Interfaces.IExchangeRatesApiProxy,Desafio.Message.Notifications.NotificacaoErro)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="21" ordinal="0" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="25" ordinal="4" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="26" ordinal="5" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="27" ordinal="6" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="21" ec="1" el="27" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="11" visitedSequencePoints="11" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Desafio.App.CotacaoApp/&lt;ObterCotacaoMoeda&gt;d__5</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="11" visitedSequencePoints="11" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.App.CotacaoApp/&lt;ObterCotacaoMoeda&gt;d__5::MoveNext()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="31" ordinal="1" sl="31" sc="1" el="31" ec="2" bec="2" bev="2" fileid="5" />
+                <SequencePoint vc="1" uspid="32" ordinal="2" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="34" ordinal="3" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="35" ordinal="4" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="36" ordinal="5" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="38" ordinal="6" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="40" ordinal="7" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="42" ordinal="8" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="44" ordinal="9" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="45" ordinal="10" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="31" ordinal="0" path="0" offset="61" offsetend="63" sl="31" fileid="5" />
+                <BranchPoint vc="1" uspid="31" ordinal="1" path="1" offset="61" offsetend="70" sl="31" fileid="5" />
+              </BranchPoints>
+              <MethodPoint vc="11" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="30" ec="1" el="45" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="11" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>Desafio.App.TaxaApp</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Tasks.Task Desafio.App.TaxaApp::AtualizarTaxaCambio(Desafio.Api.Model.Requests.AtualizarTaxaCambioRequest)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="22" ec="1" el="24" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Tasks.Task`1&lt;System.Collections.Generic.IEnumerable`1&lt;Desafio.Api.Model.Responses.ListarTaxasCambioResponse&gt;&gt; Desafio.App.TaxaApp::ListarTaxasCambio()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="26" ordinal="0" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="27" ordinal="1" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="28" ordinal="2" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="29" ordinal="3" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="26" ec="1" el="29" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.App.TaxaApp::.ctor(Desafio.Domain.Interfaces.Repositories.ITaxaRepository)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="16" ec="1" el="19" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="25" visitedSequencePoints="25" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
+          <FullName>Desafio.App.Validation.ObterCotacaoMoedaValidation</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean Desafio.App.Validation.ObterCotacaoMoedaValidation::Validar(Desafio.Api.Model.Requests.ObterCotacaoMoedaRequest)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="23" ordinal="0" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="24" ordinal="1" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="16" uspid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="23" ec="1" el="29" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="11" visitedSequencePoints="11" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.App.Validation.ObterCotacaoMoedaValidation::DefinirValidacao()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="32" ordinal="0" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="33" ordinal="1" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="35" ordinal="2" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="36" ordinal="3" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="37" ordinal="4" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="14" uspid="38" ordinal="5" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="40" ordinal="6" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="41" ordinal="7" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="42" ordinal="8" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="44" ordinal="9" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="45" ordinal="10" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="11" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="32" ec="1" el="45" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean Desafio.App.Validation.ObterCotacaoMoedaValidation::ClienteExiste(System.Int64)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="48" ordinal="0" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="6" uspid="49" ordinal="1" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="6" uspid="50" ordinal="2" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="48" ec="1" el="50" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.App.Validation.ObterCotacaoMoedaValidation::.ctor(Desafio.Domain.Interfaces.Repositories.IClienteRepository,Desafio.Message.Notifications.NotificacaoErro)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="15" ordinal="1" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="16" ordinal="2" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="17" ordinal="3" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="18" ordinal="4" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="8" uspid="20" ordinal="5" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="14" ec="1" el="20" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Desafio.App.Extensions.OperacaoExtension</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Api.Model.Responses.ObterCotacaoMoedaResponse Desafio.App.Extensions.OperacaoExtension::ToResponse(Desafio.Domain.Entities.OperacaoCambio,System.Decimal)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="11" ordinal="2" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="12" ordinal="3" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="13" ordinal="4" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="14" ordinal="5" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="15" ordinal="6" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="16" ordinal="7" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="17" ordinal="8" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="17" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Desafio.App.Extensions.TaxaCambioExtensions</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IEnumerable`1&lt;Desafio.Api.Model.Responses.ListarTaxasCambioResponse&gt; Desafio.App.Extensions.TaxaCambioExtensions::ToResponse(System.Collections.Generic.IEnumerable`1&lt;Desafio.Domain.Entities.TaxaCambio&gt;)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="15" ordinal="3" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="16" ordinal="4" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="17" ordinal="5" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="19" ordinal="6" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="12" ec="1" el="19" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="F41493F7-B810-44FF-894E-37B17CE18CCF">
+      <ModulePath>Desafio.Cache.dll</ModulePath>
+      <ModuleTime>2021-03-30T01:02:03</ModuleTime>
+      <ModuleName>Desafio.Cache</ModuleName>
+      <Files>
+        <File uid="10" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Cache\CacheManager.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="16" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>Desafio.Cache.CacheManager</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Cache.CacheManager::GravarCache(System.String,T)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="25" ordinal="4" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="19" ec="1" el="25" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>T Desafio.Cache.CacheManager::ObterChache(System.String)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="28" ordinal="0" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="29" ordinal="1" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="31" ordinal="2" sl="31" sc="1" el="31" ec="2" bec="2" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="32" ordinal="3" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="34" ordinal="4" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="35" ordinal="5" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="31" ordinal="0" path="0" offset="20" offsetend="22" sl="31" fileid="10" />
+                <BranchPoint vc="0" uspid="31" ordinal="1" path="1" offset="20" offsetend="34" sl="31" fileid="10" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="28" ec="1" el="35" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Cache.CacheManager::.ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Configuration.IConfiguration)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="14" ordinal="1" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="16" ordinal="3" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="0" uspid="17" ordinal="4" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="13" ec="1" el="17" bec="0" bev="0" fileid="10" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="5FFD8C6C-8E2E-466A-B239-F2BC89748B4D">
+      <ModulePath>Desafio.Domain.dll</ModulePath>
+      <ModuleTime>2021-03-30T01:02:03</ModuleTime>
+      <ModuleName>Desafio.Domain</ModuleName>
+      <Files>
+        <File uid="11" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Domain\Entities\Cliente.cs" />
+        <File uid="12" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Domain\Entities\OperacaoCambio.cs" />
+        <File uid="13" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Domain\Entities\TaxaCambio.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="11" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="72.72" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="5" />
+          <FullName>Desafio.Domain.Entities.Cliente</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int64 Desafio.Domain.Entities.Cliente::get_IdCliente()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.Domain.Entities.Cliente::get_NomeCliente()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.Domain.Entities.Cliente::get_CpfCnpj()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Domain.Enums.Segmento Desafio.Domain.Entities.Cliente::get_Segmento()</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Domain.Entities.Cliente::.ctor(System.Int64,System.String,System.String,Desafio.Domain.Enums.Segmento)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="12" ordinal="1" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="13" ordinal="2" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="14" ordinal="3" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="15" ordinal="4" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="16" ordinal="5" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="11" />
+                <SequencePoint vc="5" uspid="17" ordinal="6" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="11" ec="1" el="17" bec="0" bev="0" fileid="11" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="17" visitedSequencePoints="16" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="94.11" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="7" numMethods="8" />
+          <FullName>Desafio.Domain.Entities.OperacaoCambio</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Domain.Entities.Cliente Desafio.Domain.Entities.OperacaoCambio::get_Cliente()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="5" ordinal="0" sl="5" sc="1" el="5" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="5" ec="1" el="5" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Domain.Entities.TaxaCambio Desafio.Domain.Entities.OperacaoCambio::get_TaxaCambio()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="6" ordinal="0" sl="6" sc="1" el="6" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="6" ec="1" el="6" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.Domain.Entities.OperacaoCambio::get_Moeda()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Domain.Entities.OperacaoCambio::get_ValorMoeda()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Domain.Entities.OperacaoCambio::get_ValorOperacao()</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Domain.Entities.OperacaoCambio::DefinirMoedaOperacao(System.String,System.Decimal)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="16" ec="1" el="19" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Domain.Entities.OperacaoCambio::CalcularValorOperacao(System.Decimal)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="22" ec="1" el="24" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Domain.Entities.OperacaoCambio::.ctor(Desafio.Domain.Entities.Cliente,Desafio.Domain.Entities.TaxaCambio)</Name>
+              <FileRef uid="12" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="13" ordinal="3" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="12" />
+                <SequencePoint vc="2" uspid="14" ordinal="4" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="12" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="10" ec="1" el="14" bec="0" bev="0" fileid="12" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="85.71" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="3" />
+          <FullName>Desafio.Domain.Entities.TaxaCambio</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Domain.Enums.Segmento Desafio.Domain.Entities.TaxaCambio::get_Segmento()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.Domain.Entities.TaxaCambio::get_ValorTaxa()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Domain.Entities.TaxaCambio::.ctor(Desafio.Domain.Enums.Segmento,System.Decimal)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="2" uspid="12" ordinal="1" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="2" uspid="13" ordinal="2" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="2" uspid="14" ordinal="3" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="2" uspid="15" ordinal="4" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="15" bec="0" bev="0" fileid="13" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="9D54F1AF-39A8-4422-8144-024647DE7A72">
+      <ModulePath>Desafio.ExchangeRates.Proxy.dll</ModulePath>
+      <ModuleTime>2021-03-30T01:02:03</ModuleTime>
+      <ModuleName>Desafio.ExchangeRates.Proxy</ModuleName>
+      <Files>
+        <File uid="14" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.ExchangeRates.Proxy\ExchangeRatesApiProxy.cs" />
+        <File uid="15" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.ExchangeRates.Proxy\Model\LatestResult.cs" />
+        <File uid="16" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.ExchangeRates.Proxy\Model\Rates.cs" />
+        <File uid="17" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.ExchangeRates.Proxy\Dtos\MoedaDto.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>Desafio.ExchangeRates.Proxy.ExchangeRatesApiProxy</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.ExchangeRates.Proxy.ExchangeRatesApiProxy::ObterChaveMoedaAtual(System.String)</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="46" ordinal="0" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="47" ordinal="1" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="48" ordinal="2" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="46" ec="1" el="48" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.ExchangeRates.Proxy.ExchangeRatesApiProxy::.ctor(System.Net.Http.IHttpClientFactory,Desafio.Cache.Interfaces.ICacheManager)</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="20" ordinal="3" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="21" ordinal="4" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="17" ec="1" el="21" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="14" visitedSequencePoints="6" numBranchPoints="4" visitedBranchPoints="1" sequenceCoverage="42.85" branchCoverage="25" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Desafio.ExchangeRates.Proxy.ExchangeRatesApiProxy/&lt;ObterUltimaCotacaoMoeda&gt;d__3</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="42.85" branchCoverage="25" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="14" visitedSequencePoints="6" numBranchPoints="4" visitedBranchPoints="1" sequenceCoverage="42.85" branchCoverage="25" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.ExchangeRates.Proxy.ExchangeRatesApiProxy/&lt;ObterUltimaCotacaoMoeda&gt;d__3::MoveNext()</Name>
+              <FileRef uid="14" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="27" ordinal="3" sl="27" sc="1" el="27" ec="2" bec="2" bev="1" fileid="14" />
+                <SequencePoint vc="1" uspid="28" ordinal="4" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="30" ordinal="5" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="31" ordinal="6" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="33" ordinal="7" sl="33" sc="1" el="33" ec="2" bec="2" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="34" ordinal="8" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="36" ordinal="9" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="38" ordinal="10" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="40" ordinal="11" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="0" uspid="42" ordinal="12" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="14" />
+                <SequencePoint vc="1" uspid="43" ordinal="13" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="14" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="27" ordinal="0" path="0" offset="91" offsetend="93" sl="27" fileid="14" />
+                <BranchPoint vc="0" uspid="27" ordinal="1" path="1" offset="91" offsetend="110" sl="27" fileid="14" />
+                <BranchPoint vc="0" uspid="33" ordinal="2" path="0" offset="309" offsetend="311" sl="33" fileid="14" />
+                <BranchPoint vc="0" uspid="33" ordinal="3" path="1" offset="309" offsetend="324" sl="33" fileid="14" />
+              </BranchPoints>
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="24" ec="1" el="43" bec="0" bev="0" fileid="14" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="3" />
+          <FullName>Desafio.ExchangeRates.Proxy.Model.LatestResult</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.ExchangeRates.Proxy.Model.Rates Desafio.ExchangeRates.Proxy.Model.LatestResult::get_Rates()</Name>
+              <FileRef uid="15" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="15" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="15" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.ExchangeRates.Proxy.Model.LatestResult::get_Base()</Name>
+              <FileRef uid="15" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="15" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="15" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.ExchangeRates.Proxy.Model.LatestResult::get_Date()</Name>
+              <FileRef uid="15" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="15" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="15" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Desafio.ExchangeRates.Proxy.Model.Rates</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.ExchangeRates.Proxy.Model.Rates::get_BRL()</Name>
+              <FileRef uid="16" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="5" ordinal="0" sl="5" sc="1" el="5" ec="2" bec="0" bev="0" fileid="16" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="5" ec="1" el="5" bec="0" bev="0" fileid="16" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="15" visitedSequencePoints="10" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="66.66" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="6" />
+          <FullName>Desafio.ExchangeRates.Proxy.Dtos.MoedaDto</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String Desafio.ExchangeRates.Proxy.Dtos.MoedaDto::get_Nome()</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Desafio.ExchangeRates.Proxy.Dtos.MoedaDto::get_ValorEmReais()</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="8" ordinal="0" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="8" ec="1" el="8" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateTime Desafio.ExchangeRates.Proxy.Dtos.MoedaDto::get_DataCotacao()</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.ExchangeRates.Proxy.Dtos.MoedaDto::DefinirDataCotacao(System.String)</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="21" ordinal="0" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="1" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="1" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="21" ec="1" el="23" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.ExchangeRates.Proxy.Dtos.MoedaDto::.ctor(System.String,System.Decimal,System.String)</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="1" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="1" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="1" uspid="13" ordinal="3" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="1" uspid="14" ordinal="4" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="1" uspid="15" ordinal="5" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="10" ec="1" el="15" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.ExchangeRates.Proxy.Dtos.MoedaDto::.ctor()</Name>
+              <FileRef uid="17" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="0" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="17" />
+                <SequencePoint vc="0" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="17" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="16" ec="1" el="19" bec="0" bev="0" fileid="17" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="5EB079F2-8E5E-49EC-8AEE-7F66F18429C7">
+      <ModulePath>Desafio.Message.dll</ModulePath>
+      <ModuleTime>2021-03-30T01:02:03</ModuleTime>
+      <ModuleName>Desafio.Message</ModuleName>
+      <Files>
+        <File uid="18" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Message\Notifications\NotificacaoErro.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="75" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="5" />
+          <FullName>Desafio.Message.Notifications.NotificacaoErro</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IReadOnlyCollection`1&lt;System.String&gt; Desafio.Message.Notifications.NotificacaoErro::get_Mensagens()</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="18" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean Desafio.Message.Notifications.NotificacaoErro::get_PossuiMensangens()</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="18" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Message.Notifications.NotificacaoErro::AdicionarMensangens(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;)</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="8" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="8" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="17" ec="1" el="19" bec="0" bev="0" fileid="18" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Message.Notifications.NotificacaoErro::AdicionarMensangem(System.String)</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="0" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="0" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="22" ec="1" el="24" bec="0" bev="0" fileid="18" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Message.Notifications.NotificacaoErro::.ctor()</Name>
+              <FileRef uid="18" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="9" uspid="12" ordinal="1" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="9" uspid="13" ordinal="2" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="18" />
+                <SequencePoint vc="9" uspid="14" ordinal="3" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="18" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="11" ec="1" el="14" bec="0" bev="0" fileid="18" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module hash="E38EF169-2F4A-4303-8F98-4929B86162E7">
+      <ModulePath>Desafio.Repository.dll</ModulePath>
+      <ModuleTime>2021-03-30T01:02:03</ModuleTime>
+      <ModuleName>Desafio.Repository</ModuleName>
+      <Files>
+        <File uid="19" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Repository\ClienteRepository.cs" />
+        <File uid="20" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Repository\TaxaRepository.cs" />
+        <File uid="21" fullPath="C:\GitHub\LePiroupo\Desafio\src\Desafio.Repository\Base\BaseRepository.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="16" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="16" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>Desafio.Repository.ClienteRepository</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="16" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="16" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="16" minCyclomaticComplexity="16" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Domain.Entities.Cliente Desafio.Repository.ClienteRepository::ObterClientePorId(System.Int64)</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="16" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="24" ordinal="5" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="23" ordinal="1" path="1" offset="5" offsetend="9" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="0" path="0" offset="5" offsetend="46" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="3" path="1" offset="66" offsetend="70" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="2" path="0" offset="66" offsetend="117" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="5" path="1" offset="148" offsetend="152" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="4" path="0" offset="148" offsetend="189" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="7" path="1" offset="209" offsetend="213" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="6" path="0" offset="209" offsetend="260" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="9" path="1" offset="291" offsetend="295" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="8" path="0" offset="291" offsetend="332" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="11" path="1" offset="352" offsetend="356" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="10" path="0" offset="352" offsetend="403" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="13" path="1" offset="434" offsetend="438" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="12" path="0" offset="434" offsetend="475" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="15" path="1" offset="495" offsetend="499" sl="23" fileid="19" />
+                <BranchPoint vc="0" uspid="23" ordinal="14" path="0" offset="495" offsetend="546" sl="23" fileid="19" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="24" bec="0" bev="0" fileid="19" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Repository.ClienteRepository::.ctor(Microsoft.Extensions.Configuration.IConfiguration)</Name>
+              <FileRef uid="19" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="19" />
+                <SequencePoint vc="0" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="19" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="12" ec="1" el="14" bec="0" bev="0" fileid="19" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="20" visitedSequencePoints="0" numBranchPoints="8" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="8" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="5" />
+          <FullName>Desafio.Repository.TaxaRepository</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IEnumerable`1&lt;Desafio.Domain.Entities.TaxaCambio&gt; Desafio.Repository.TaxaRepository::ListarTaxasCambio()</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="21" ordinal="2" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="22" bec="0" bev="0" fileid="20" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>Desafio.Domain.Entities.TaxaCambio Desafio.Repository.TaxaRepository::ObterTaxaCambioPorSegmento(Desafio.Domain.Enums.Segmento)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="28" ordinal="2" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="30" ordinal="3" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="31" ordinal="4" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="25" ec="1" el="31" bec="0" bev="0" fileid="20" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Repository.TaxaRepository::AtualizarTaxaCambio(Desafio.Domain.Entities.TaxaCambio)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="35" ordinal="1" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="36" ordinal="2" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="37" ordinal="3" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="38" ordinal="4" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="34" ec="1" el="38" bec="0" bev="0" fileid="20" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="8" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="8" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="8" minCyclomaticComplexity="8" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Func`2&lt;System.Object,Desafio.Domain.Entities.TaxaCambio&gt; Desafio.Repository.TaxaRepository::GerarTaxa()</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="41" ordinal="0" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="42" ordinal="1" sl="42" sc="1" el="42" ec="2" bec="8" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="43" ordinal="2" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="42" ordinal="1" path="1" offset="5" offsetend="9" sl="42" fileid="20" />
+                <BranchPoint vc="0" uspid="42" ordinal="0" path="0" offset="5" offsetend="72" sl="42" fileid="20" />
+                <BranchPoint vc="0" uspid="42" ordinal="3" path="1" offset="102" offsetend="106" sl="42" fileid="20" />
+                <BranchPoint vc="0" uspid="42" ordinal="2" path="0" offset="102" offsetend="143" sl="42" fileid="20" />
+                <BranchPoint vc="0" uspid="42" ordinal="5" path="1" offset="163" offsetend="167" sl="42" fileid="20" />
+                <BranchPoint vc="0" uspid="42" ordinal="4" path="0" offset="163" offsetend="214" sl="42" fileid="20" />
+                <BranchPoint vc="0" uspid="42" ordinal="7" path="1" offset="245" offsetend="249" sl="42" fileid="20" />
+                <BranchPoint vc="0" uspid="42" ordinal="6" path="0" offset="245" offsetend="296" sl="42" fileid="20" />
+              </BranchPoints>
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="41" ec="1" el="43" bec="0" bev="0" fileid="20" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Repository.TaxaRepository::.ctor(Microsoft.Extensions.Configuration.IConfiguration)</Name>
+              <FileRef uid="20" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="20" />
+                <SequencePoint vc="0" uspid="15" ordinal="2" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="20" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="12" ec="1" el="15" bec="0" bev="0" fileid="20" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="14" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>Desafio.Repository.Base.BaseRepository</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 Desafio.Repository.Base.BaseRepository::ExecutarConsultaSemRetorno(System.String,System.Object)</Name>
+              <FileRef uid="21" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="20" ordinal="0" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="21" ordinal="1" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="22" ordinal="2" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="21" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="20" ec="1" el="22" bec="0" bev="0" fileid="21" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>T Desafio.Repository.Base.BaseRepository::ObterObjeto(System.String,System.Object,System.Func`2&lt;System.Object,T&gt;)</Name>
+              <FileRef uid="21" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="21" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="24" ec="1" el="26" bec="0" bev="0" fileid="21" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IEnumerable`1&lt;T&gt; Desafio.Repository.Base.BaseRepository::ObterLista(System.String,System.Func`2&lt;System.Object,T&gt;)</Name>
+              <FileRef uid="21" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="28" ordinal="0" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="29" ordinal="1" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="30" ordinal="2" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="21" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="28" ec="1" el="30" bec="0" bev="0" fileid="21" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Desafio.Repository.Base.BaseRepository::.ctor(Microsoft.Extensions.Configuration.IConfiguration)</Name>
+              <FileRef uid="21" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="15" ordinal="1" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="16" ordinal="2" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="17" ordinal="3" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="21" />
+                <SequencePoint vc="0" uspid="18" ordinal="4" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="21" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="14" ec="1" el="18" bec="0" bev="0" fileid="21" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

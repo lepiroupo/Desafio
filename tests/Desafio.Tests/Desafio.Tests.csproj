@@ -7,15 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="coverlet.msbuild" Version="2.9.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="Moq" Version="4.14.5" />
     <PackageReference Include="Moq.AutoMock" Version="2.0.1" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
-    <PackageReference Include="coverlet.collector" Version="1.3.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -24,5 +24,5 @@
     <ProjectReference Include="..\..\src\Desafio.ExchangeRates.Proxy\Desafio.ExchangeRates.Proxy.csproj" />
     <ProjectReference Include="..\..\src\Desafio.Repository\Desafio.Repository.csproj" />
   </ItemGroup>
-
+<!--dotnet test /p:CollectCoverage=true /p:Exclude="[*]*.Repository.*%2c[*]*.IoC.*%2c[*]*.Proxy.*%2c[*]*.Cross.*%2c[*]*.Api.Model.*"-->
 </Project>
