@@ -31,7 +31,7 @@ namespace Desafio.Api.Controllers
             if (_notificacoes.PossuiMensangens)
                 return BadRequest(_notificacoes.Mensagens);
 
-            return new JsonResult(default(T))
+            return new JsonResult(default(T));
         }
         protected async Task<IActionResult> ProcessarRequest(Func<Task> metodo)
         {
