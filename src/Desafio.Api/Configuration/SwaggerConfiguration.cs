@@ -1,8 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using System;
-using System.IO;
-using System.Reflection;
 
 namespace Desafio.Api.Configuration
 {

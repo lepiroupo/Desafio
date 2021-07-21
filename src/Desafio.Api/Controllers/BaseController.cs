@@ -18,10 +18,10 @@ namespace Desafio.Api.Controllers
 
         protected async Task<IActionResult> ProcessarRequest<T>(Func<Task<T>> metodo)
         {
+            object response = null;
             try
             {
-                var response = await metodo();
-                return new JsonResult(response);
+                response = await metodo();
             }
             catch (Exception ex)
             {
@@ -31,7 +31,7 @@ namespace Desafio.Api.Controllers
             if (_notificacoes.PossuiMensangens)
                 return BadRequest(_notificacoes.Mensagens);
 
-            return new JsonResult(default(T));
+            return new JsonResult(response);
         }
         protected async Task<IActionResult> ProcessarRequest(Func<Task> metodo)
         {
